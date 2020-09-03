@@ -5,7 +5,7 @@ variable "iam_role" {
 }
 variable "lambda_name_rds" {
   type        = string
-  default     = "CW-Alarm-Creation-RDS
+  default     = "CW-Alarm-Creation-RDS"
   description = "lamda function name"
 }
 variable "sns_arn" {
