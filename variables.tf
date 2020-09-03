@@ -18,6 +18,16 @@ variable "cw_cpu_threshold" {
   default     = "80"
   description = "Threshold for CPU Utilization"
 }
+variable "cw_disk_threshold" {
+  type        = number
+  default     = "80"
+  description = "Threshold for Disk Utilization"
+}
+variable "cw_memory_threshold" {
+  type        = number
+  default     = "80"
+  description = "Threshold for Memory Utilization"
+}
 variable "cw_number_of_connections" {
   type        = number
   default     = "30"

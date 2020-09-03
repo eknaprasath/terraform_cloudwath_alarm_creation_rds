@@ -18,7 +18,9 @@ resource "aws_lambda_function" "CW-Alarm-Creation-RDS" {
     variables = {
       sns_arn = var.sns_arn,
       cw_number_of_connections = var.cw_number_of_connections,
-      cw_cpu_threshold = var.cw_cpu_threshold
+      cw_cpu_threshold = var.cw_cpu_threshold,
+      cw_memory_threshold = var.cw_memory_threshold,
+      cw_disk_threshold = var.cw_disk_threshold
     }
   }
 }
