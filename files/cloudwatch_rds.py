@@ -22,7 +22,7 @@ def lambda_handler(event, context):
     print(rdsevent)
     if rdsevent == "DB instance created":
         get_intance_type = client.describe_db_instances(
-        DBInstanceIdentifier='database-1',
+        DBInstanceIdentifier=rds_name,
         MaxRecords=20,
         Marker='string'
         )
