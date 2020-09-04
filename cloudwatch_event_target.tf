@@ -14,8 +14,16 @@ resource "aws_cloudwatch_event_rule" "RDS-Alarm-Creation" {
     "aws.rds"
   ],
   "detail-type": [
-    "RDS DB Instance Event"
-  ]
+    "AWS API Call via CloudTrail"
+  ],
+  "detail": {
+    "eventSource": [
+      "rds.amazonaws.com"
+    ],
+    "eventName": [
+      "CreateDBInstance"
+    ]
+  }
 }
 PATTERN
 }
