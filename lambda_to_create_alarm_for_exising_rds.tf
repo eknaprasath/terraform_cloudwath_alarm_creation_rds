@@ -1,4 +1,4 @@
-resource "aws_lambda_function" "CW-Alarm-Creation-RDS" {
+resource "aws_lambda_function" "CW-Alarm-Creation-RDS-for-existing-instances" {
   description = "Lambda function to create cloudwatch alarms for RDS"
   filename      = "files/cloudwatch_rds.zip"
   function_name = var.lambda_name_rds_for_existing_rds_alarm
