@@ -8,6 +8,11 @@ variable "lambda_name_rds" {
   default     = "CW-Alarm-Creation-RDS"
   description = "lamda function name"
 }
+variable "lambda_name_rds_for_existing_rds_alarm" {
+  type        = string
+  default     = "CW-Alarm-Creation-RDS-for-existing-instances"
+  description = "lamda function name"
+}
 variable "sns_arn" {
   type        = string
   default     = "arn:aws:sns:us-east-1:356143132518:cloudwatch_alarm"
